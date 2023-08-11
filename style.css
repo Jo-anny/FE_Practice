@@ -14,34 +14,25 @@ body {
     color: hsl(241, 100%, 89%);
     text-align: center;
     padding: 30px 50px;
-    border-bottom-left-radius: 35px;
-    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-/* .percentage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: green;
-    width: 150px;
-    height: 150px; 
-    border-radius: 75px;
-} */
-
-.great  {
+.great {
+    padding: .5em;
     color: #fff;
 }
+
 .summary {
     color: hsl(224, 30%, 27%);
     font-weight: bold;
-    text-align: left;
-    margin-left: 8em;;
+    padding: 1.5em 1.5em 0;
 }
-.second_section {
+
+.section2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,8 +43,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* background-color: #ff0; */
-    width: 60%;
+    width: 100%;
     font-weight: bold;
 }
 
@@ -64,7 +54,6 @@ body {
 .first {
     background-color: hsla(0, 62%, 93%, 0.363);
     padding: .8em;
-    margin-top: 1em;
     border-radius: 10px ;
 }
 svg {
@@ -114,9 +103,9 @@ svg {
     color: hsl(0, 0%, 100%);
     background-color: hsl(224, 30%, 27%);
     border: none;
-    width: 60%;
+    width: 100%;
     padding: 1em;
-    border-radius: 30px;
+    border-radius: 2em;
     font-size: 1rem;
 }
 
@@ -127,8 +116,30 @@ svg {
     color: hsl(228, 45%, 44%); 
 }
 
+footer {
+    padding: 1em;
+}
+
 @media screen and (min-width: 700px)and (max-width: 1440px){
     main {
         display: flex;
+        justify-content: center;
+        background-color: #fff;
+        margin: 5em 5em 2em;
+    }
+    section {
+        width: 400px;
+        box-shadow: 10px 10px 10px hsl(221, 100%, 96%);
+    }
+    .first_section {
+        margin: 2em 0em 0em;
+        padding: 1em 0em;
+        border-radius: 35px;
+        background-color: #0000ff;
+    }
+    .second_section {
+        margin: 2em 0em 0em;
+        background-color: #fff;
+        border-radius: 35px;
     }
 }
